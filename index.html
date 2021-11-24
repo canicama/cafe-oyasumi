@@ -21,25 +21,20 @@
             </ul>
         </nav>
 
-        <section>
-            <div class="btn-trigger" id="btn18">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </section>
+        
 
     </div>
 
-    <div class="contents">
-        <div class="home">
+    <div class="contents" >
+        <section  class="home sc-box" data-section-name="Area1" >
             <div class="box1">
                 <div class="box2"><img src="images/home-text001.png" alt=""></div>
                 <div class="box3"><img src="images/home-text02.png" alt=""></div>
             </div>
             <div class="title">喫茶おやすみ</div>
-        </div>
-        <div class="concept" id="concept">
+        </section>
+
+        <section class="concept sc-box" id="concept" >
             <div class="text_line"></div>
             <h1>CONCEPT<span>コンセプト</span></h1>
                 <div class="concept1">
@@ -62,8 +57,9 @@
                 <p>コンセプト文章２A</p>
             </div>
         </div>
-        </div>
-        <div class="menu" id="menu">
+        </section>
+
+        <section class="menu sc-box" id="menu">
             <div class="text_line"></div>
             <h1>MENU<span>メニュー</span></h1>
             <div class="menu_contents">
@@ -71,13 +67,14 @@
                 <li class="menu2"><a href="menu.html#food">フード</a></li>
                 <li class="menu2"><a href="menu.html#drink">ドリンク</a></li>
             </div>
-        </div>
-        <div class="access" id="access">
+         </section>
+
+        <section class="access sc-box" id="access">
             <div class="text_line"></div>
             <h1>ACCESS<span>アクセス</span></h1>
             <div class="box10">
             <div class="access_contents">
-                <div class="access_google">Googleマップ</div>
+                <div class="access_google"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16651.814994068674!2d139.7053402470635!3d35.7249215350016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2z5rGg6KKL6aeF!5e0!3m2!1sja!2sjp!4v1637736276164!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
                 <div class="access_text">
                     <li>喫茶OYASUMI</li>
                     <li>東京メトロ「明治神宮前」駅 出口5 徒歩1分</li>
@@ -85,12 +82,26 @@
                 </div>
             </div>
             </div>
-        </div>
+        </section>
     </div>
 
         <footer>
             <p>&copy;　喫茶OYASUMI</p>
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+
+    <script src="js/6-1.js"></script>
+    <script>
+        $(function(){
+            $.scrollify({
+                section : ".sc-box",
+            });
+        });
+    </script>
+</body>
+
 </body>
 </html>

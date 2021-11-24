@@ -230,7 +230,6 @@
 .concept{
     background-color: rgb(0, 0, 0);
     height: 100vh;
-    float: left;
 }
 .concept h2{
   padding: 0 0 4vh 0;
